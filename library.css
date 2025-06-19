@@ -1,0 +1,48 @@
+
+body {
+    background-color: #D93B0B;
+    /* background-image: url(https://png.pngtree.com/background/20210711/original/pngtree-classical-ink-painting-bamboo-background-material-picture-image_1130331.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #D9A153;
+    padding: 5px;
+}
+
+.nav > .buttons > button {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.browse {
+    background-color: #D9B50B;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    border: 2px solid wheat;
+    background-image: url(https://www.shutterstock.com/image-illustration/retro-chinese-acient-bamboo-slip-600nw-2259733719.jpg);
+}
+
+.card > p {
+    margin: 40px;
+}
+
+#add-book-form {
+    flex-direction: column;
+    background-color: white;
+    border: solid 1.5px black;
+    padding: 20px;
+    margin: 5px;
+    text-align: center;
+}
+
+#submit {
+    margin-top: 10px;
+}
