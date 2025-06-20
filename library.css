@@ -1,17 +1,18 @@
 
 body {
-    background-color: #D93B0B;
-    /* background-image: url(https://png.pngtree.com/background/20210711/original/pngtree-classical-ink-painting-bamboo-background-material-picture-image_1130331.jpg);
+    background-color: #9eb984;
+    background-image: url(https://png.pngtree.com/background/20210711/original/pngtree-classical-ink-painting-bamboo-background-material-picture-image_1130331.jpg);
     background-repeat: no-repeat;
-    background-size: cover; */
+    background-size: cover;
 }
 
 .nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #D9A153;
+    background-image: url(https://i.pinimg.com/736x/a3/2a/b6/a32ab69335760ba25ae96ce8b1f2f670.jpg);
     padding: 5px;
+    border: 1px solid black;
 }
 
 .nav > .buttons > button {
@@ -20,14 +21,18 @@ body {
 }
 
 .browse {
-    background-color: #D9B50B;
+    width: 735px;
 }
 
 .card {
+    background-image: url(https://i.pinimg.com/736x/24/bb/98/24bb98c31371b59f59e6261dd8e4d8a9.jpg);
+    background-repeat: no-repeat;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    border: 2px solid wheat;
-    background-image: url(https://www.shutterstock.com/image-illustration/retro-chinese-acient-bamboo-slip-600nw-2259733719.jpg);
+    align-items: center;
+    max-width: 735px;
+    min-height: 300px;
 }
 
 .card > p {
@@ -45,4 +50,27 @@ body {
 
 #submit {
     margin-top: 10px;
+}
+
+.browse > * {
+    border: 2px solid black;
+    text-align: center;
+}
+
+.browse > div  {
+    margin: 20px;
+}
+
+.close {
+    display: none;
+}
+
+.library {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.library > * {
+    margin: 20px;
 }
