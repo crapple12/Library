@@ -2,8 +2,11 @@
 body {
     background-color: #9eb984;
     background-image: url(https://png.pngtree.com/background/20210711/original/pngtree-classical-ink-painting-bamboo-background-material-picture-image_1130331.jpg);
-    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
     background-size: cover;
+    margin: 0px;
+    min-height: 100vh;
 }
 
 .nav {
@@ -20,10 +23,6 @@ body {
     cursor: pointer;
 }
 
-.browse {
-    width: 735px;
-}
-
 .card {
     background-image: url(https://i.pinimg.com/736x/24/bb/98/24bb98c31371b59f59e6261dd8e4d8a9.jpg);
     background-repeat: no-repeat;
@@ -31,8 +30,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 735px;
     min-height: 300px;
+    position: relative;
 }
 
 .card > p {
@@ -52,6 +51,13 @@ body {
     margin-top: 10px;
 }
 
+.browse {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    width: 100vw;
+}
+
 .browse > * {
     border: 2px solid black;
     text-align: center;
@@ -59,10 +65,29 @@ body {
 
 .browse > div  {
     margin: 20px;
+    min-width: 300px;
 }
 
 .close {
     display: none;
+}
+
+.close-card {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 5px;
+}
+
+.card .close-button {
+    background-color: #3f3f3f;
+    color: #e5dfd3;
+    cursor: pointer;
+    display: none;
+}
+
+.card:hover .close-button {
+    display: block;
 }
 
 .library {
