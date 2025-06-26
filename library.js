@@ -22,7 +22,7 @@ function render() {
         bookEl.innerHTML = `
         <div class="card">
             <div class="close-card">
-                <button class="close-button">x</button>
+                <button class="close-button" onclick="removeBook(${i})">x</button>
             </div>
             <div class="card-header">
                 <h3 class="title">${book.title}<h3>
@@ -36,6 +36,11 @@ function render() {
         `;
         libraryEl.appendChild(bookEl);
     }
+}
+
+function removeBook(index) {
+    myLibrary.splice(index, 1);
+    render();
 }
 
 function addBookToLibrary() {
