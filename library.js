@@ -21,6 +21,9 @@ function render() {
         let bookEl = document.createElement("div");
         bookEl.innerHTML = `
         <div class="card">
+            <div class="close-card">
+                <button class="close-button">x</button>
+            </div>
             <div class="card-header">
                 <h3 class="title">${book.title}<h3>
                 <h5 class="author">${book.author}<h5>
@@ -57,6 +60,7 @@ closeForm.addEventListener("click", function() {
     addBookForm.style.display = "none";
     closeForm.style.display = "none";
 })
+
 
 document.querySelector("#add-book-form").addEventListener("submit", function(event) {
     event.preventDefault();
