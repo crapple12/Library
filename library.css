@@ -1,6 +1,5 @@
 
 body {
-    background-color: #9eb984;
     background-image: url(https://png.pngtree.com/background/20210711/original/pngtree-classical-ink-painting-bamboo-background-material-picture-image_1130331.jpg);
     background-position: center;
     background-attachment: fixed;
@@ -99,3 +98,10 @@ body {
 .library > * {
     margin: 20px;
 }
+
+.title, .author, .pages, .status {
+    text-transform: capitalize;
+}
+
+
+
